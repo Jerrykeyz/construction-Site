@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.logo{
+    font-family: algerian;
+    font-weight:normal;
+    color:#87bc29;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+nav{
+    position:fixed;
+    width:100%;
+    display: flex;
+    padding:10px 2%;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align:center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+nav h1{
+    font-size:40px;
+    font-weight:normal;
+    color:white;
+    margin-left:10rem;
+}
+nav .logo{
+    color:#87bc29;
+    font-family: algerian;
+}
+.navbar ul{
+    margin-right:5rem;
+}
+.navbar ul li{
+    display: inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.navbar ul li a{
+    color:#fff;
+}
+.navbar ul li a::after{
+    content: '';
+    position:absolute;
+    width:12px;
+    height:12px;
+    top:0;
+    right:0;
+    border:2px solid #fff;
+    border-width:3px 3px 0 0;
+    transition: all 0.6s;
+    opacity: 0;
+}
+.navbar ul li a:hover::after{
+    opacity:1;
+    top:-8px;
+    right:-8px;
+}
+.navbar ul li a::before{
+    position:absolute;
+    content:'';
+    width:12px;
+    height:12px;
+    left:0;
+    bottom:0;
+    border: 2px solid #fff;
+    border-width:0 0 3px 3px;
+    opacity: 0;
+    transition:all 0.6s;
+}
+.navbar ul li a:hover::before{
+    opacity: 1;
+    bottom:-8px;
+    left:-8px;
+}
+nav .fa{
+    display: none;
+}
+.hero{
+    background:linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.616)), url(Images/scott-blake-x-ghf9LjrVg-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.pic-container{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left:10rem;
+    color:white;
+}
+.pic-container h3{
+    font-size:1.2rem;
+}
+.pic-container h1{
+    font-size:5rem;
+}
+.pic-container p{
+    font-weight:bold;
+}
+.pic-container a{
+    color:white;
+    border-bottom: 2px solid #87bc29;
+    padding-bottom:5px;
+    font-size:bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top:20px;
+}
+.service-title{
+    text-align: center;
+    margin:50px;
+    font-size: 3rem;
+    font-weight:normal;
+    align-items: center;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.service-title:hover{
+        transform:skew(20deg);
+}
+.services-pic-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.service-pic{
+        margin:20px;
+        padding:20px;
+        border:1px solid #ccc;
+        transition:1s;
+}
+.service-pic:hover{
+    transform: scale(1.2);
+}
+.service-pic p{
+    text-align: center;
+    justify-content: center;
+    margin-top:10px;
+}
+.img{
+    width:300px;
+    height:250px;
+}
+.image1{
+    background-image: url(Images/one.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.image2{
+    background-image:url(Images/two.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.image3{
+    background-image:url(Images/three.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.why-title{
+    text-align: start;
+    font-weight: normal;
+    flex-wrap:wrap;
+    font-size:3rem;
+    margin-left:3rem;
+    margin-top:30px;
+    margin-bottom:30px;
+    transition: 1s;
+}
+.why-title:hover{
+    transform: skew(20deg);
+}
+.why-container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.list-container{
+    margin-left:30px;
+}
+.lists{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.list-no{
+    display: flex;
+    width:30px;
+    height:30px;
+    border:2px solid #87bc29;
+    margin:10px 20px;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color:#87bc29;
+}
+.list-info{
+    color:rgb(122, 122, 122);
+    transition-property: all;
+    transition-duration:1s;
+}
+.list-info:hover{
+    transform: scale(1.1);
+    font-weight:bold;
+}
+.image{
+    border:5px solid #87bc29;
+    border-radius: 50%;
+    height:300px;
+    width:300px;
+    margin-right:10rem;
+    background: url(Images/Zayn.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+    transition: 1s;
+}
+.image:hover{
+    transform: scale(1.2);
+}
+/* Project Details */
+
+.project-title{
+    flex-wrap: wrap;
+    text-align:center;
+    margin-top:20px;
+    margin-bottom:0px;
+}
+  .project-details__container-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    font-family: sans-serif;
+  }
+  
+  .project-details__container-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    font-family: sans-serif;
+  }
+  
+  .project-details-img {
+    box-shadow: 10px 10px 5px #87bc29;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+  
+  .project-details-img:hover {
+    transform: scale(1.1);
+    box-shadow: 20px 20px 10px #87bc29;
+    transform: skew(10deg);
+  }
+  
+  .title {
+    margin-left: 40px;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form input{
+    border:none;
+    border-bottom:1px solid #87bc29;
+  }
